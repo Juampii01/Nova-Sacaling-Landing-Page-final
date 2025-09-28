@@ -33,15 +33,21 @@ export function AuthoritySection() {
             }`}
           >
             <div className="order-2 md:order-1">
-              <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">Sobre el fundador</h2>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">Conocé a Juan Pablo Acosta</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Con más de 2 años ayudando a consultores y coaches a escalar sus negocios, he desarrollado un sistema
-                probado que combina estrategia de marca personal con procesos de ventas consultivos.
+                Soy Juan Pablo Acosta y llevo más de dos años detrás de cámaras como editor y estratega de contenido
+                para coaches y consultores que venden ofertas high ticket. Analizando horas de contenido y cientos de
+                conversaciones de venta descubrí qué piezas realmente generan autoridad y cuáles solo ocupan espacio.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Esa experiencia me mostró que la clave no está en publicar más, sino en ordenar un sistema que alinee
+                la narrativa, el contenido y la experiencia de venta. Cuando todo encaja, la marca deja de depender del
+                esfuerzo manual diario y empieza a atraer prospectos listos para avanzar.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Mi enfoque no se basa en tácticas temporales, sino en construir autoridad real y sistemas sostenibles
-                que funcionan a largo plazo. Cada cliente recibe atención personalizada y estrategias adaptadas a su
-                negocio específico.
+                Hoy acompaño a mis clientes a implementar ese sistema: mensajes claros, contenido que educa y procesos
+                comerciales que convierten sin fricción. No son tácticas pasajeras, es una metodología replicable que
+                demuestra resultados medibles y sostenibles.
               </p>
             </div>
             <div
@@ -52,7 +58,7 @@ export function AuthoritySection() {
               <div className="relative">
                 <img
                   src="/professional-business-founder-portrait-in-suit.jpg"
-                  alt="Founder portrait"
+                  alt="Juan Pablo Acosta"
                   className="w-full max-w-sm mx-auto rounded-lg shadow-lg"
                   loading="lazy"
                 />
