@@ -1,0 +1,132 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color tokens for Nova Scaling premium dark theme */
+  --background: #0b0f0e; /* Dark Background */
+  --foreground: #ffffff; /* Text Color */
+  --card: #1a1c1b; /* Card Background */
+  --card-foreground: #f7f7f7; /* Card Text */
+  --popover: #1a1c1b; /* Popover Background */
+  --popover-foreground: #f7f7f7; /* Popover Text */
+  --primary: #0f3d3e; /* Primary Elements */
+  --primary-foreground: #ffffff; /* Primary Text */
+  --secondary: #bfaf9d; /* Secondary Elements */
+  --secondary-foreground: #0b0f0e; /* Secondary Text */
+  --muted: #3b3f3e; /* Muted Elements */
+  --muted-foreground: #f7f7f7; /* Muted Text */
+  --accent: #0f3d3e; /* Accent Elements */
+  --accent-foreground: #ffffff; /* Accent Text */
+  --destructive: #e63946; /* Destructive Elements */
+  --destructive-foreground: #ffffff; /* Destructive Text */
+  --border: #3b3f3e; /* Borders */
+  --input: #1a1c1b; /* Input Background */
+  --ring: rgba(15, 61, 62, 0.5); /* Focus Ring */
+  --chart-1: #0f3d3e; /* Chart Color 1 */
+  --chart-2: #bfaf9d; /* Chart Color 2 */
+  --chart-3: #e63946; /* Chart Color 3 */
+  --chart-4: #3b3f3e; /* Chart Color 4 */
+  --chart-5: #f7f7f7; /* Chart Color 5 */
+  --radius: 0.5rem; /* Corner Rounding */
+  --sidebar: #1a1c1b; /* Sidebar Background */
+  --sidebar-foreground: #f7f7f7; /* Sidebar Text */
+  --sidebar-primary: #0f3d3e; /* Sidebar Primary */
+  --sidebar-primary-foreground: #ffffff; /* Sidebar Primary Text */
+  --sidebar-accent: #bfaf9d; /* Sidebar Accent */
+  --sidebar-accent-foreground: #0b0f0e; /* Sidebar Accent Text */
+  --sidebar-border: #3b3f3e; /* Sidebar Border */
+  --sidebar-ring: rgba(15, 61, 62, 0.5); /* Sidebar Focus Ring */
+}
+
+/* Added premium fonts for Nova Scaling */
+@theme inline {
+  --font-sans: var(--font-dm-sans);
+  --font-serif: var(--font-playfair-display);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Added custom styles for Nova Scaling premium effects */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #0f3d3e 0%, #bfaf9d 100%);
+  transform-origin: 0%;
+  z-index: 1000;
+}
