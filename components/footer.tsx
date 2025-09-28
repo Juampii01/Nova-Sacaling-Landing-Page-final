@@ -9,7 +9,7 @@ export function Footer() {
 
           <div className="flex items-center space-x-6">
             <a
-              href="https://instagram.com/placeholder"
+              href="https://www.instagram.com/juampiiacosta_/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-secondary transition-colors"
@@ -18,7 +18,7 @@ export function Footer() {
               <Instagram className="w-5 h-5" />
             </a>
             <a
-              href="https://youtube.com/placeholder"
+              href="https://www.youtube.com/@juampiiacosta"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-secondary transition-colors"
@@ -31,7 +31,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-secondary transition-colors"
-              aria-label="WhatsApp"
+              aria-label="Calendly"
             >
               <MessageCircle className="w-5 h-5" />
             </a>
