@@ -4,7 +4,6 @@ import type React from "react"
 import { DM_Sans } from "next/font/google"
 import { Playfair_Display } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
-import { useSearchParams } from "next/navigation"
 import { Suspense } from "react"
 
 const dmSans = DM_Sans({
@@ -24,8 +23,6 @@ export function ClientLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const searchParams = useSearchParams()
-
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
