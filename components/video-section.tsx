@@ -31,7 +31,7 @@ export function VideoSection() {
                 fill
                 priority
                 alt="Vista previa del video de Nova Scale"
-                src="/video-cover.svg"
+                src="/image.png"
                 sizes="(min-width: 1024px) 960px, 100vw"
                 className="object-cover pointer-events-none"
               />
