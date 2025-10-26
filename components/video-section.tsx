@@ -71,7 +71,7 @@ export function VideoSection() {
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8 py-4 transition-all duration-200 hover:translate-y-[-2px] hover:shadow-lg"
             >
-              <a href="https://calendly.com/placeholder" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendly.com/juampiacosta158/llamada-de-consultoria-nova-scaling?month=2025-10" target="_blank" rel="noopener noreferrer">
                 Quiero mi llamada estratégica
               </a>
             </Button>

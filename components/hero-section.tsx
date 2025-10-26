@@ -51,7 +51,7 @@ export function HeroSection() {
         <Button
           size="lg"
           className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8 py-4 text-lg transition-all duration-200 hover:translate-y-[-2px] hover:shadow-xl"
-          onClick={() => window.open("https://calendly.com/placeholder", "_blank")}
+          onClick={() => window.open("https://calendly.com/juampiacosta158/llamada-de-consultoria-nova-scaling?month=2025-10", "_blank")}
         >
           Agendá tu llamada estratégica
         </Button>
